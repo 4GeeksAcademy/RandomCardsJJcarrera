@@ -1,1 +1,39 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+
+.card {
+  background-color: white;
+  width: 400px;
+  height: 700px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  font-size: 115px;
+  justify-content: space-between;
+}
+
+.stickup {
+  padding-left: 25px;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sticKdown {
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
