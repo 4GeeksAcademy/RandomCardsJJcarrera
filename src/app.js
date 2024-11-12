@@ -102,19 +102,22 @@ function generarCartaAleatoria() {
 }
 
 document.getElementById("button-new").addEventListener("click", function() {
-  const oldCard = document.querySelector(".cardInstance");
-  if (oldCard) {
-    oldCard.remove();
-  }
-
-  const cartaAleatoria = generarCartaAleatoria();
-  console.log(cartaAleatoria);
-  const newCard = document
+  /*const oldCard = document
     .getElementById("cardTemplate")
     .querySelector(".card")
     .cloneNode(true);
+  if (oldCard) {
+    oldCard.remove();
+  }*/
 
-  document.body.appendChild(newCard);
+  const cartaAleatoria = generarCartaAleatoria();
+  console.log(cartaAleatoria);
+  const cardTemplate = document.getElementById("cardTemplate");
+  cardTemplate.style.display = "block";
+  const newCard = cardTemplate.querySelector(".card").cloneNode(true);
+
+  cardTemplate.querySelector(".card").replaceWith(newCard);
+
   newCard.classList.add("cardInstance");
   newCard.querySelector(".value").innerText = cartaAleatoria.valor.simbolo;
   newCard.querySelector(".stickup").innerText = cartaAleatoria.simbolo.simbolo;

@@ -1,5 +1,6 @@
 body {
   background-color: green;
+  display: flex;
 }
 
 .card {
@@ -14,6 +15,9 @@ body {
 }
 
 .stickup {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
   padding-left: 25px;
 }
 
@@ -36,4 +40,17 @@ body {
 
 .black {
   color: black;
+}
+.center-content {
+  display: inline;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.button {
+  width: 150px;
+  font-size: 22px;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 5px;
 }
