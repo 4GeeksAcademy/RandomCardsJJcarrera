@@ -28,10 +28,11 @@ body {
 }
 
 .sticKdown {
-  align-items: end;
+  align-items: start;
   display: flex;
   flex-direction: column;
-  padding-right: 25px;
+  padding-left: 25px;
+  transform: rotate(180deg);
 }
 
 .red {
